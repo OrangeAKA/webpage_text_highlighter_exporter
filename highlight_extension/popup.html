@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Text Exporter</title>
+    <style>
+      body {
+        width: 300px;
+        height: 200px;
+        margin: 0;
+        padding: 16px;
+        font-family: Arial, sans-serif;
+      }
+      button {
+        margin-bottom: 8px;
+      }
+      #message {
+        display: block;
+        border: 1px solid black;
+        padding: 8px;
+        margin-top: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Text Exporter</h1>
+    <button id="saveButton">Save Highlighted Text</button>
+    <br>
+    <label for="fileFormat">Export format:</label>
+    <select id="fileFormat">
+      <option value="txt">Text</option>
+      <option value="csv">CSV</option>
+      <option value="both">Both</option>
+    </select>
+    <button id="exportButton">Export All Text</button>
+    <button id="clearButton">Clear Storage</button>
+    <div id="message"></div>
+    <script src="popup.js"></script>
+  </body>
+</html>
